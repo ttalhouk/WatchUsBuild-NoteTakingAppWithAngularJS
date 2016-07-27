@@ -4,7 +4,7 @@ var app = express();
 // Load Express Configuration
 require('./expressConfig')(app, express);
 
-// Root route
+// Root route points to index.html
 app.get('/', function(req, res){
   res.sendfile('index.html', {root: app.settings.views});
 });

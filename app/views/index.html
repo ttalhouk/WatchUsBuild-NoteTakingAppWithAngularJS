@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="NoteWrangler">
+  <head>
+    <meta charset="utf-8">
+    <title>Note Wrangler</title>
+    <link rel="stylesheet" href="assets/styles/bootstrap.css"></link>
+    <link rel="stylesheet" href="assets/styles/bootstrap-theme.css"></link>
+  </head>
+  <body>
+    <h1>Note Wrangler</h1>
+
+    <div ng-view class="container-fluid">
+      <!-- Load Templates here -->
+    </div>
+  </body>
+
+  <!-- vendor
+  load Jquery first followed by angular then modules-->
+  <script type="text/javascript" src="assets/javascript/vendor/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/vendor/angular.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/vendor/angular-resource.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/vendor/angular-route.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/vendor/bootstrap.min.js"></script>
+
+  <!-- App -->
+
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+  <script type="text/javascript" src="assets/javascript/routes.js"></script>
+
+  <!-- Directives -->
+  <!-- Controllers -->
+
+  <script type="text/javascript" src="assets/javascript/controllers/notesIndexController.js"></script>
+  <script type="text/javascript" src="assets/javascript/controllers/notesShowController.js"></script>
+  <script type="text/javascript" src="assets/javascript/controllers/notesCreateController.js"></script>
+  <script type="text/javascript" src="assets/javascript/controllers/notesEditController.js"></script>
+
+  <!-- Services -->
+  <script type="text/javascript" src="assets/javascript/services/note.js"></script>
+</html>
