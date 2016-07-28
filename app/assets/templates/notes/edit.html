@@ -7,6 +7,20 @@
   </fieldset>
 
   <fieldset class="form-group">
+    <label for="category">Category</label>
+    <select ng-options="category.id as category.name for category in categories" ng-model="note.categoryId">
+      <!-- this takes each category id and desplays it as category name -->
+    </select>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label for="user">Author</label>
+    <select ng-options="user.id as user.name for user in users" ng-model="note.userId">
+      <!-- this takes each category id and desplays it as category name -->
+    </select>
+  </fieldset>
+
+  <fieldset class="form-group">
     <label for="description">Description</label>
     <input class="form-control" type="text" name="description" id="description" ng-model="note.description">
   </fieldset>
